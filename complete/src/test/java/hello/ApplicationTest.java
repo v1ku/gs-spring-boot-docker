@@ -32,7 +32,7 @@ import org.springframework.test.annotation.DirtiesContext;
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 @DirtiesContext
-public class CalculationTest {
+public class ApplicationTest {
 
 	@Test
     public void testAdd() throws Exception {
