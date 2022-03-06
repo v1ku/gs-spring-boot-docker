@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class CalculatorSampleAppApplicationTests {
+public class CalculationTest {
 
 	@Test
     public void testAdd() throws Exception {
