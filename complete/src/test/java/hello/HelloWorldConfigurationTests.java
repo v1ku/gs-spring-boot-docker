@@ -41,10 +41,9 @@ public class HelloWorldConfigurationTests {
 	private TestRestTemplate restTemplate;
 
 	@Test
-	public void testGreeting() throws Exception {
-		ResponseEntity<String> entity = restTemplate
-				.getForEntity("http://localhost:" + this.port + "/", String.class);
-		assertEquals(HttpStatus.OK, entity.getStatusCode());
+	public void testAdd() throws Exception {
+	int result = Calculator.add(10, 20);
+	assertEquals(30, result);
 	}
 
 }
