@@ -33,7 +33,6 @@ import org.springframework.test.annotation.DirtiesContext;
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 @DirtiesContext
 public class CalculatorTest {
-	
 	@LocalServerPort
 	private int port;
 
