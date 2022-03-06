@@ -32,7 +32,20 @@ import org.springframework.test.annotation.DirtiesContext;
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 @DirtiesContext
-public class ApplicationTest {
+public class HelloWorldConfigurationTests {
+
+	@LocalServerPort
+	private int port;
+
+	@Autowired
+	private TestRestTemplate restTemplate;
+
+	@Test
+	public void testGreeting() throws Exception {
+		ResponseEntity<String> entity = restTemplate
+				.getForEntity("http://localhost:" + this.port + "/", String.class);
+		assertEquals(HttpStatus.OK, entity.getStatusCode());
+	}
 
 	@Test
     public void testAdd() throws Exception {
