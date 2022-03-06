@@ -1,27 +1,13 @@
-package com.demo.simplecalculator.backend.controllers;
+package com.example.demo;
 
-import com.demo.simplecalculator.backend.models.Equation;
-import com.demo.simplecalculator.backend.models.Equation.Sign;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Controller;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@Controller
-public class SimpleCalculator {
+@SpringBootApplication
+class Calculator {
     
-    public double add(int number1, int number2) {
-        return Double.valueOf(number1) + Double.valueOf(number2);
+    public static int add(int x, int y){
+      return x + y;
     }
-    
-    public double subtract(int number1, int number2) {
-        return Double.valueOf(number1) - Double.valueOf(number2);
-    }
-    
-    public double multiply(int number1, int number2) {
-        return Double.valueOf(number1) * Double.valueOf(number2);
-    }
-    
-    public double divide(int number1, int number2) {
-        return Double.valueOf(number1) / Double.valueOf(number2);
-    }
-    
+
 }
