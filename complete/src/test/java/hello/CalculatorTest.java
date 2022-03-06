@@ -32,7 +32,7 @@ import org.springframework.test.annotation.DirtiesContext;
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 @DirtiesContext
-public class HelloWorldConfigurationTests {
+public class CalculatorTest {
 
 	@LocalServerPort
 	private int port;
@@ -49,7 +49,7 @@ public class HelloWorldConfigurationTests {
 
 	@Test
     public void testAdd() throws Exception {
-    int result = Application.add(10, 20);
+    int result = Calculator.add(10, 20);
     assertEquals(30, result);
     }
 
