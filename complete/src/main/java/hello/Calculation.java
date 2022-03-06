@@ -2,7 +2,8 @@
 package com.huongdanjava.springboot;
  
 import org.springframework.stereotype.Service;
- 
+
+@SpringBootApplication
 @Service
 public class Calculation {
  
