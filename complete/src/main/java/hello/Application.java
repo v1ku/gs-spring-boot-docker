@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-class Calculator {
+public class Application {
     
     public static int add(int x, int y){
       return x + y;

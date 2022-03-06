@@ -36,7 +36,7 @@ public class CalculationTest {
 
 	@Test
     public void testAdd() throws Exception {
-    int result = Calculator.add(10, 20);
+    int result = Application.add(10, 20);
     assertEquals(30, result);
     }
 
